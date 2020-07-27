@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "..\\..\\App.svelte",
+    "..\\..\\Header.svelte"
+  ],
+  "sourcesContent": [
+    "<script lang=\"ts\">import Header from './Header.svelte';\r\n</script>\n\n<Header></Header>\n<main>\n\t<h1>IDEAplex</h1>\n\t<p>IDEAplex is a home to all my future projects.</p>\n</main>\n\n<style>\nmain {\t\t\n\tpadding: 1em;\t\t\n\tgrid-area: body;\n}\n\nh1 {\t\t\t\t\n\tfont-size: 2em;\n\tfont-weight: 400;\n\tfont-family: Karla;\n\ttext-align: left;\n}\n</style>",
+    "<navbar>\r\n    <div class=\"site-name\"><a href=\"/\">IDEAplex</a></div>\r\n    <div class=\"projects\"><a href=\"#projects\">Projects</a></div>\r\n</navbar>\r\n\r\n\r\n<style>\r\nnavbar {\r\n    grid-area: topbar;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid black;\r\n    font-family: Karla;\r\n    font-size: var(--top-font-base);\r\n    margin-top: var(--margins-top);\r\n    margin-left: var(--margins-horizontal);\r\n    margin-right: var(--margins-horizontal);\r\n}\r\n\r\n.site-name {\r\n    align-self: center;\r\n}\r\n\r\n.site-name > a {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n\r\n.projects {\r\n    align-self: center;        \r\n}\r\n\r\n.projects > a {\r\n    color: black;\r\n    text-decoration: none;\r\n}\r\n\r\n\r\n</style>"
+  ],
+  "names": [],
+  "mappings": "AAUA,IAAI,eAAC,CAAC,AACL,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,IAAI,AAChB,CAAC,AAED,EAAE,eAAC,CAAC,AACH,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,GAAG,CAChB,WAAW,CAAE,KAAK,CAClB,UAAU,CAAE,IAAI,AACjB,CAAC;ACbD,MAAM,8BAAC,CAAC,AACJ,SAAS,CAAE,MAAM,CACjB,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,GAAG,CACnB,eAAe,CAAE,aAAa,CAC9B,aAAa,CAAE,GAAG,CAAC,KAAK,CAAC,KAAK,CAC9B,WAAW,CAAE,KAAK,CAClB,SAAS,CAAE,IAAI,eAAe,CAAC,CAC/B,UAAU,CAAE,IAAI,aAAa,CAAC,CAC9B,WAAW,CAAE,IAAI,oBAAoB,CAAC,CACtC,YAAY,CAAE,IAAI,oBAAoB,CAAC,AAC3C,CAAC,AAED,UAAU,8BAAC,CAAC,AACR,UAAU,CAAE,MAAM,AACtB,CAAC,AAED,yBAAU,CAAG,CAAC,eAAC,CAAC,AACZ,KAAK,CAAE,KAAK,CACZ,eAAe,CAAE,IAAI,AACzB,CAAC,AAED,SAAS,8BAAC,CAAC,AACP,UAAU,CAAE,MAAM,AACtB,CAAC,AAED,wBAAS,CAAG,CAAC,eAAC,CAAC,AACX,KAAK,CAAE,KAAK,CACZ,eAAe,CAAE,IAAI,AACzB,CAAC"
+}

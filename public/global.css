@@ -1,0 +1,98 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 960px) {
+	:root {
+		--top-font-base: 1rem;
+		--margins-horizontal: 0rem;
+		--margins-top: 0rem;
+	}
+	
+	body {
+		display: grid;
+		grid-template-columns: 1fr 960px 1fr;		
+		grid-template-rows: 1.5rem 1fr;
+		grid-template-areas: "gutter-left topbar gutter-right" "gutter-left body gutter-right";
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	:root {
+		--top-font-base: 1.2rem;
+		--margins-horizontal: 0.5rem;
+		--margins-top: 0.0rem;
+	}
+
+	body { 
+		display: grid;
+		grid-template-columns: 1fr;		
+		grid-template-rows: 3rem 1fr;
+		grid-template-areas: "topbar" "body";		
+	}
+}
+
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+input[type="range"] {
+	height: 0;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
